@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="titulo">
+        <h1 class="titulo__texto">Encriptador de Texto de Soft</h1>
+    </header>
+    <main class="main">
+        <section class="main__primera__seccion">
+            <input class="input__texto" type="text" id="inputTexto" placeholder="Introduce el texto aquí...">
+            <p class="disclaimer">*Solo letras minúsculas y sin acentos</p>
+            <div class="boton__grupo">
+                <button class="boton" onclick="encriptarTexto();"><img src="./assets/Encriptar.png" alt="Encriptar"></button>
+                <button class="boton" onclick="desencriptarTexto();"><img src="./assets/Desencriptar.png" alt="Desencriptar"></button>
+            </div>
+        </section>
+        <section class="main__segunda__seccion">
+            <div class="caja__resultado">
+                <img class="lupa" src="./assets/lupa.png" alt="Lupa">
+                <p class="output__texto" id="outputTexto">no se ha insertado ningún texto...</p>
+            </div>
+            <button class="boton__copiar" onclick="Copiar();"><img src="./assets/Copiar.png" alt="Copiar"></button> 
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="https://sites.google.com/view/softheticportfolio/main?authuser=0" class="footer__text">Portafolio</a>
+        <a href="https://ko-fi.com/softhetic" class="footer__text">Ko-fi</a>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

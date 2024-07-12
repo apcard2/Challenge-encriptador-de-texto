@@ -1,0 +1,166 @@
+
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb-demi');
+@import url('https://use.typekit.net/lsp1ina.css');
+
+:root{
+    --color-primario: rgb(255,217,238);
+    --color-secundario: rgb(255,123,172);
+    --color-del-texto: #f6f6f6;
+
+    --Berlin-Sans: 'Berlin Sans FB Demi', sans-serif;
+    --Acumin: "acumin-pro", sans-serif;
+
+
+}
+
+body{
+    background-color: var(--color-primario);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.titulo{
+    background-color: var(--color-secundario); 
+    padding: .5%;
+
+}
+
+.titulo__texto{
+    font-family: var(--Berlin-Sans);
+    font-weight: 600;
+    font-size: 3.75rem;
+    color: var(--color-del-texto);
+
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    gap: 15%;
+}
+.main__primera__seccion{
+    display: flex;
+    flex-direction: column;
+}
+.main__segunda__seccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.caja__resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-width: 0.25rem;
+    width: 20.313rem;
+    height: 38.56rem;
+    background-image: linear-gradient(to right, var(--color-secundario), rgba(0,0,0,0));
+    border-radius: 0.75rem;
+    border-color: var(--color-del-texto);
+}
+
+.lupa{
+    width: 12.125rem;
+    height: 21.242rem;
+    padding: 15% 15% 15% 15%;
+}
+
+.output__texto{
+    font-family: var(--Acumin);
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--color-del-texto);
+    justify-content: center;
+    padding: 5% 5% 5% 5%;
+    text-align: center;
+}
+
+.input__texto{
+    background-color: rgba(0,0,0,0);
+    width: 40.57rem;
+    height: 38.55rem;
+    margin: none;
+    font-family: var(--Acumin);
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--color-del-texto);
+
+}
+.disclaimer{
+    color: var(--color-del-texto);
+    font-family: var(--Berlin-Sans);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.boton__grupo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    row-gap: 5%;
+}
+
+.boton{
+   border-style: none;
+   background: rgba(0,0,0,0);
+
+}
+
+.boton__copiar{
+    border-style: none;
+    background: rgba(0,0,0,0);
+    padding: 1.68rem;
+ 
+ }
+
+.footer{
+    background-color: var(--color-secundario); 
+    padding: .01%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    width: auto;
+}
+
+.footer__text{
+    font-family: var(--Berlin-Sans);
+    font-weight: 600;
+    font-size: 2.21rem;
+    color: var(--color-del-texto);
+
+}
+
+@media (max-width:768px){
+    .main{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .main__segunda__seccion{
+        justify-content: center;
+
+    }
+    .caja__resultado{
+        width: auto;
+        justify-content: center;
+    }
+    .input__texto{
+        width: auto;
+    }
+   
+
+}
+@media (max-width:375px){
+    .boton__grupo{
+        flex-direction: column;
+    }
+    .caja__resultado{
+        width: auto;
+    }
+    .input__texto{
+        width: auto;
+    }
+        
+}
